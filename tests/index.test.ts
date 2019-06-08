@@ -3,7 +3,7 @@
  */
 import * as createStore from "storeon";
 import { Store } from "storeon";
-import * as router from "../src";
+import * as router from "../";
 
 describe("Server implementation", () => {
   let store: Store<router.IState>;

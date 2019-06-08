@@ -2,9 +2,10 @@
   "name": "storeon-isorouter",
   "version": "0.0.1",
   "description": "Isomorphic storeon module for url routing on client and server",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "tslint -p ./",
     "build": "tsc"
   },
@@ -33,9 +34,6 @@
   },
   "jest": {
     "preset": "ts-jest",
-    "collectCoverageFrom": [
-      "./src/**/*.ts"
-    ],
     "coverageDirectory": "./tests/coverage"
   }
 }
