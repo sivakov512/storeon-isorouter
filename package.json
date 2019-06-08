@@ -1,0 +1,19 @@
+{
+  "name": "storeon-isorouter",
+  "version": "0.0.1",
+  "description": "Isomorphic storeon module for url routing on client and server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sivakov512/storeon-isorouter.git"
+  },
+  "author": "Nikita Sivakov <sivakov512@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sivakov512/storeon-isorouter/issues"
+  },
+  "homepage": "https://github.com/sivakov512/storeon-isorouter#readme"
+}
