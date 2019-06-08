@@ -2,8 +2,8 @@
   "name": "storeon-isorouter",
   "version": "0.0.1",
   "description": "Isomorphic storeon module for url routing on client and server",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest --coverage",
     "lint": "tslint -p ./",
