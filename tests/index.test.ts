@@ -19,4 +19,23 @@ describe("Server implementation", () => {
 
     expect(state.path).toBe("");
   });
+
+  test("Navigate to another path", () => {
+    const path = "/some-path/";
+
+    store.dispatch(router.navigate, path);
+
+    const state = routerState(store);
+    expect(state.path).toBe(path);
+  });
+
+  test("State changed correctly for every navigation", () => {
+    store.dispatch(router.navigate, "/some-path/");
+    store.dispatch(router.navigate, "/another/path/");
+    store.dispatch(router.navigate, "/yet/another/path/");
+
+    const state = routerState(store);
+
+    expect(state.path).toBe("/yet/another/path/");
+  });
 });
