@@ -4,7 +4,7 @@
   "description": "Isomorphic storeon module for url routing on client and server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,24 @@
   "bugs": {
     "url": "https://github.com/sivakov512/storeon-isorouter/issues"
   },
-  "homepage": "https://github.com/sivakov512/storeon-isorouter#readme"
+  "homepage": "https://github.com/sivakov512/storeon-isorouter#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "storeon": "^0.8.5",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.1"
+  },
+  "prettier": {
+    "trailingComma": "all"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "collectCoverageFrom": [
+      "./src/**/*.ts"
+    ],
+    "coverageDirectory": "./tests/coverage"
+  }
 }
