@@ -14,10 +14,9 @@ describe("Server implementation", () => {
 
   const routerState = (s: Store<router.IState>) => s.get()[router.key];
 
-  it("Initialized with empty state", () => {
+  test("Initialized with empty state", () => {
     const state = routerState(store);
 
     expect(state.path).toBe("");
-    expect(state.params).toEqual([]);
   });
 });
