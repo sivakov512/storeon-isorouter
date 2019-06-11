@@ -8,7 +8,7 @@
   "unpkg": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest --coverage ; bundlesize",
     "lint": "tslint -p ./",
     "build": "microbundle"
   },
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/sivakov512/storeon-isorouter#readme",
   "devDependencies": {
     "@types/jest": "^24.0.13",
+    "bundlesize": "^0.17.2",
     "coveralls": "^3.0.4",
     "jest": "^24.8.0",
     "microbundle": "^0.11.0",
@@ -43,5 +44,19 @@
     "preset": "ts-jest",
     "coverageDirectory": "./tests/coverage"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "bundlesize": [
+    {
+      "path": "./dist/index.js",
+      "maxSize": "331b"
+    },
+    {
+      "path": "./dist/index.mjs",
+      "maxSize": "338b"
+    },
+    {
+      "path": "./dist/index.umd.js",
+      "maxSize": "404b"
+    }
+  ]
 }
