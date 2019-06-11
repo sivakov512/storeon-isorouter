@@ -1,5 +1,5 @@
 /**
- * @jest-environment: node
+ * @jest-environment node
  */
 import * as createStore from "storeon";
 import { Store } from "storeon";
